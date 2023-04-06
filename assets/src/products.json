@@ -232,7 +232,7 @@
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
-		"category": "Nejprodávanější,
+		"category": "Nejprodávanější",
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
@@ -253,7 +253,7 @@
 		"availability": "Skladem",
 		"price": 28465,
 		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", Výprodej"]
+		"flags": ["Tip", "Výprodej"]
 	},
 
 	{
@@ -287,7 +287,7 @@
 		"price": 102940,
 		"imgSrc": "/assets/img/product3.jpg",
 		"flags": ["Novinka"]
-	}
+	},
 	{
 		"category": "Doporučené",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
@@ -361,13 +361,13 @@
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
-		"category": Doporučené,
+		"category": "Doporučené",
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
 		"imgSrc": "/assets/img/product2.jpg",
 		"flags": ["Tip", "Výprodej"]
-	}
+	},
 	{
 		"category": "Doporučené",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",

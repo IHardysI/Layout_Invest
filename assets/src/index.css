@@ -1,0 +1,433 @@
+@font-face {
+  font-family: MontserratMedium;
+  src: url(../src/fonts/Montserrat-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(../src/fonts/Montserrat-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 16, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+ul, ol, li {
+  list-style: none;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+input {
+  outline: none;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+body {
+  font-family: MontserratMedium;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+body .wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+body .wrapper .main {
+  flex: 1 1 auto;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+[class*="__container"] {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* PC */
+@media (max-width: 1200px) {
+  /* line 54, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  /* line 60, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+  /* line 66, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+/* line 71, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.lock {
+  overflow: hidden;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container {
+  display: flex;
+  align-items: center;
+  height: 122px;
+}
+
+/* line 90, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__logo {
+  margin-right: auto;
+  padding: 26px 101px 23px 79px;
+  position: relative;
+  transition: 0.8s;
+  left: 0;
+  background-color: #E9E9E9;
+}
+
+@media (max-width: 1200px) {
+  /* line 101, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__logo {
+    padding: 19px 58px 17px 58px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 107, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__logo {
+    padding: 12px 27px 10px 27px;
+  }
+  /* line 110, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__logo.active {
+    left: -100%;
+    margin-right: 0;
+  }
+}
+
+/* line 117, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right {
+  display: flex;
+  align-items: center;
+}
+
+/* line 121, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu {
+  display: flex;
+  gap: 37.5px;
+}
+
+/* line 125, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu .menu__ucet-mena {
+  display: none;
+}
+
+/* line 128, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu .menu__ucet-mena .menu__mena {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+/* line 133, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu .menu__ucet-mena .menu__mena::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-bottom: white 1.2px solid;
+  border-left: white 1.2px solid;
+  transform: rotate(-45deg) translate(-3px, -6px);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 991.98px) {
+  /* line 146, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu .menu__ucet-mena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* line 155, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu .produkty {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+/* line 160, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__menu .produkty::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-bottom: white 1.2px solid;
+  border-left: white 1.2px solid;
+  transform: rotate(-45deg) translate(-3px, -6px);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 1200px) {
+  /* line 173, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 179, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu {
+    position: fixed;
+    left: -100%;
+    top: 120px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  /* line 193, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu {
+    top: 72px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 198, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu .menu__item {
+    margin: 1rem 0;
+  }
+  /* line 201, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu .menu__item .menu__link {
+    color: white;
+  }
+  /* line 206, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__menu.active {
+    left: 0;
+  }
+}
+
+/* line 212, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
+  margin-left: 77px;
+  padding: 11px;
+  border-bottom: 1.5px solid #C9C9C9;
+}
+
+/* line 223, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__form .form__input {
+  width: 274px;
+  transition: 1s;
+}
+
+/* line 228, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__form button {
+  background-color: transparent;
+  outline: none;
+}
+
+@media (max-width: 1317px) {
+  /* line 235, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form {
+    margin-left: 50px;
+  }
+  /* line 239, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form .form__input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 245, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form {
+    margin-left: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 251, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form {
+    border-radius: 60px;
+    background-color: #E9E9E9;
+    border: 0;
+  }
+  /* line 257, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form.active {
+    left: -30px;
+  }
+  /* line 261, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form .form__input {
+    width: 0;
+    background-color: transparent;
+    float: right;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__form .form__input.active {
+    width: 130px;
+  }
+}
+
+/* line 271, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__triple-icons {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  margin-left: 44px;
+}
+
+/* line 278, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__triple-icons .header__kosik {
+  gap: 10px;
+}
+
+/* line 282, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__triple-icons .header__mena, .header .header__container .header__right .header__triple-icons .header__kosik, .header .header__container .header__right .header__triple-icons .header__ucet {
+  display: flex;
+  align-items: center;
+}
+
+/* line 287, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__triple-icons .header__mena {
+  gap: 11px;
+}
+
+/* line 289, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__triple-icons .header__mena::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-bottom: #000 1.2px solid;
+  border-left: #000 1.2px solid;
+  transform: rotate(-45deg) translate(-3px, -6px);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 1200px) {
+  /* line 303, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__triple-icons {
+    gap: 10px;
+    margin-left: 18px;
+  }
+  /* line 309, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__triple-icons .header__kosik {
+    gap: 3px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 314, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__triple-icons .header__ucet, .header .header__container .header__right .header__triple-icons .header__mena {
+    display: none;
+  }
+}
+
+/* line 320, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* line 324, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__burger .burger__bar {
+  display: block;
+  width: 49px;
+  height: 2px;
+  -webkit-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+/* line 334, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.header .header__container .header__right .header__burger .burger__bar:first-child {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+  /* line 340, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__burger {
+    display: block;
+  }
+  /* line 344, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__burger.active .burger__bar:nth-child(1) {
+    transform: translateY(8px) rotate(45px);
+  }
+  /* line 347, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right .header__burger.active .burger__bar:nth-child(2) {
+    transform: translateY(-8px) rotate(-45px);
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 354, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container .header__right {
+    gap: 13px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 361, ../../../../../../../../../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .header .header__container {
+    height: 72px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
