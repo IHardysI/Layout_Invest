@@ -14,6 +14,9 @@ const searchIcon = document.querySelector('.header__form')
 const searchInput = document.querySelector('.form__input')
 const logo = document.querySelector('.header__logo')
 const form = document.querySelector('.header__form') 
+const btn = document.querySelector('.btn')
+
+btn.addEventListener('click', (event) => event.preventDefault())
 
 searchIcon.addEventListener('click', (event) => {
     searchInput.classList.toggle('active')
