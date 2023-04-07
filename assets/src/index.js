@@ -20,7 +20,7 @@ btn.addEventListener('click', (event) => event.preventDefault())
 
 searchIcon.addEventListener('click', (event) => {
     searchInput.classList.toggle('active')
-    searchInput.placeholder = 'hledat'
+    searchInput.placeholder = 'Hledat'
     logo.classList.toggle('active')
     form.classList.toggle('active')
 })
@@ -28,3 +28,12 @@ searchIcon.addEventListener('click', (event) => {
 searchInput.addEventListener('click', (event) => {
     event.stopPropagation()
 })
+
+// slider
+
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

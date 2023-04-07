@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo zadani</title>
     <link rel="stylesheet" href="./assets/src/index.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div class="wrapper">
@@ -40,12 +44,36 @@
             </div>
         </header>
         <main class="main">
-
+            <section class="big-pic">
+                <div class="big-pic__container">
+                    <p class="big-pic__1p">
+                        Lorem ipsum dolor sit
+                    </p>
+                    <p class="big-pic__2p">
+                        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+                    </p>
+                    <button class="big-pic__btn">
+                        <a href="#">
+                            Zobrazit
+                        </a>
+                    </button>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/big-pic-1.jpg" alt="slider-img"></div>
+                        <div class="swiper-slide"><img src="./assets/img/big-pic-2.jpg" alt="slider-img"></div>
+                        <div class="swiper-slide"><img src="./assets/img/big-pic-3.jpg" alt="slider-img"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
 
         </footer>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./assets/src/index.js"></script>
 </body>
 </html>
