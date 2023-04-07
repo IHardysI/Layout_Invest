@@ -1,2 +1,2 @@
-#Here is a vanilla JavaScript layout
+Here is a vanilla JavaScript layout
 https://ihardysi.github.io/Layout_Invest/
