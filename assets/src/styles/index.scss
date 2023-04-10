@@ -54,6 +54,7 @@ $smallLogo: 12px 27px 10px 27px;
     height: 58px;
     background: #FFFFFF;
     border: 2px solid #FFFFFF;
+    cursor: pointer;
 }
 
 @mixin smallBtn() {
@@ -61,6 +62,39 @@ $smallLogo: 12px 27px 10px 27px;
     height:43.2px;
     background: #FFFFFF;
     border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+@mixin yellowBtn($rightPadding) {
+    width: 16.675%;
+    aspect-ratio: 243 / 118;
+    padding-left: 2.8%;
+    background-color: #ECB235;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9.05%;
+    position: absolute;
+    font-size: 14px;
+    right: 0%;
+    transform: translateY(-50%);
+
+    @media(max-width:991.98px) {
+        & {
+            font-size: 11px;
+
+            img {
+                width: 20%;
+            }
+        }
+    }
+    @media(max-width:767.98px) {
+        & {
+            font-size: 9px;
+            padding-left: 1%;
+            width: 24.675%;
+        }
+    }
 }
 
 
@@ -291,6 +325,7 @@ body {
                         border-radius: 60px;
                         background-color: #E9E9E9;
                         border: 0;
+                        margin-left: 0;
                     }
 
                     &.active {
@@ -352,6 +387,12 @@ body {
                 @media(max-width: 991.98px) {
                     .header__ucet, .header__mena {
                         display: none;
+                    }
+                }
+
+                @media(max-width: 767.98px) {
+                    & {
+                        margin-left: 0;
                     }
                 }
             }
@@ -459,7 +500,10 @@ body {
 
         .swiper-pagination {
             bottom: 15%;
-            color: white;
+            
+            span {
+                background-color: white;
+            }
         }
 
         .swiper-slide {
@@ -480,7 +524,7 @@ body {
     }
 }
 
-// big-pic////////////////////////////
+// triple-block////////////////////////////
 
 .triple-block {
     background-color: white;
@@ -504,6 +548,8 @@ body {
             justify-content: center;
             flex-direction: column;
             gap: 27%;
+            background-size: cover;
+            background-repeat: no-repeat;
             &:nth-child(1) {
                 background-image: url(../img/triple-block-1.jpg)
             }
@@ -537,11 +583,292 @@ body {
                     @include smallBtn()
                 }
             }
+
+            @media(max-width:1200px) {
+                .triple-block__p {
+                    font-size: 30px;
+                }
+
+                .triple-block__btn {
+                    width: 196px;
+                    height: 48px;
+                }
+            }
         }
 
         @media(max-width: 991.98px) {
             flex-direction: column;
             height: 565px;
+        }
+    }
+}
+
+
+// big-sec//////////////////////////////
+
+.big-sec {
+    background: linear-gradient(180deg, rgba(19,19,19,1) 33%, rgba(255,255,255,1) 33%);
+
+    .big-sec__container {
+        display: flex;
+        gap: 96px;
+        flex-direction: column;
+    }
+}
+
+// nabidka///////////////
+
+.nabidka {
+    position: relative;
+            
+    .nabidka__title {
+        text-align: center;
+        margin: 74px 0 60px 0;
+        @include txt36px(500);
+
+        @media (max-width:767.98px) {
+            & {
+                @include txt36pxSmall(500);
+                font-size: 24px;
+            }
+        }
+    }
+
+    .nabidka__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .nabidka__item {
+            width: 25%;
+            aspect-ratio: 361 / 610;
+            background-size: cover;
+            padding-bottom: 7.7%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-left: 1.597%;
+            cursor: pointer;
+            transition: 0.7s;
+            background-blend-mode: lighten;
+            background-size: 100%;
+
+            &:hover {
+                background-color: rgba($color: #ECB235
+                , $alpha: 0.7);
+                background-size: 101%;
+            }
+
+            .nabidka__h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #FFFFFF;
+            }
+
+            .nabidka__h4 {
+                @include txt36px(500);
+                display: flex;
+                align-items: center;
+                gap: 3.87%;
+
+                .nabidka__arrow {
+                    opacity: 0;
+                    transition: 0.7s;
+                }
+
+                @media(max-width: 1200px) {
+                    & {
+                        @include txt36pxSmall(500)
+                    }
+                }
+            }
+
+            &:hover {
+                .nabidka__arrow {
+                    opacity: 1;
+                }
+            }
+
+            &:nth-child(4) {
+                .nabidka__h4 {
+                    position: relative;
+
+                    .nabidka__arrow {
+                        position: absolute;
+                        bottom: -40%;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                background-image: url(../img/four-one.jpg);
+            }
+            &:nth-child(2) {
+                background-image: url(../img/four-two.jpg);
+            }
+            &:nth-child(3) {
+                background-image: url(../img/four-three.jpg);
+            }
+            &:nth-child(4) {
+                background-image: url(../img/four-four.jpg);
+            }
+
+            @media(max-width: 767.98px) {
+                &{
+                    width: 50%;
+                }
+
+                .nabidka__arrow {
+                    width: 12%;
+                }
+
+                &:nth-child(3), &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .nabidka__btn {
+        @include yellowBtn(60px)
+    }
+}
+
+
+// zbozi///////////////
+
+.zbozi {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 61px;
+
+    .zbozi__list {
+        display: flex;
+        gap: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #979797;
+
+        .zbozi__item {
+            &.active {
+                color: black;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .zbozi__cards {
+        display: flex;
+        justify-content: flex-start;
+        gap: 4px;
+        width: 100%;
+
+        .zbozi__card {
+            aspect-ratio: 367 / 552;
+            width: 24.16%;
+            position: relative;
+            padding: 14px 12px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #C4C4C4;
+            }
+
+            .zbozi__flags {
+                position: absolute;
+                color: white;
+                right: 3.8%;
+                width: 36.6%;
+                font-size: 18px;
+
+                .zbozi__flag1, .zbozi__flag2 {
+                    width: 100%;
+                    height: 31px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .zbozi__flag1 {
+                    margin-bottom: 9px;
+                    background-color: #63DA46;
+                }
+                .zbozi__flag2 {
+                    background-color: #F24D4D;
+                }
+            }
+
+            .zbozi__img {
+                width: 100%;
+                aspect-ratio: 345 / 384;
+                margin-bottom: 6.811%;
+            }
+
+            .zbozi__title {
+                margin-bottom: 4%;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .zbozi__stav {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #63DA46;
+                margin-bottom: 4%;
+            }
+
+            .zbozi__price {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .zbozi__add {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16.348%;
+                aspect-ratio: 1 / 1;
+                background-color: #000;
+                right: 3.8%;
+                bottom: 3.3%;
+                position: absolute;
+
+                .zbozi__add-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    .zbozi__add-link-img {
+                        width: 36.6%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 767.98px) {
+        & {
+            margin-bottom: 54px;
+            gap: 33px;
+
+            .zbozi__list {
+                
+            }
         }
     }
 }
