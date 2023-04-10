@@ -894,9 +894,10 @@ body .wrapper .main {
 /* line 782, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card:hover {
   border: 1px solid #C4C4C4;
+  box-shadow: 0.5px 0.5px 2px #c4c4c4;
 }
 
-/* line 786, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 787, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags {
   position: absolute;
   color: white;
@@ -905,7 +906,7 @@ body .wrapper .main {
   font-size: 18px;
 }
 
-/* line 793, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 794, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1, .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   width: 100%;
   height: 31px;
@@ -914,25 +915,25 @@ body .wrapper .main {
   justify-content: center;
 }
 
-/* line 800, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 801, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1 {
   margin-bottom: 9px;
   background-color: #63DA46;
 }
 
-/* line 804, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 805, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   background-color: #F24D4D;
 }
 
-/* line 809, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 810, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__img {
   width: 100%;
   aspect-ratio: 345 / 384;
   margin-bottom: 6.811%;
 }
 
-/* line 815, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 816, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__title {
   margin-bottom: 4%;
   font-style: normal;
@@ -941,7 +942,7 @@ body .wrapper .main {
   line-height: 22px;
 }
 
-/* line 823, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 824, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav {
   font-style: normal;
   font-weight: 500;
@@ -951,7 +952,7 @@ body .wrapper .main {
   margin-bottom: 4%;
 }
 
-/* line 832, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 833, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__price {
   font-style: normal;
   font-weight: 500;
@@ -959,7 +960,7 @@ body .wrapper .main {
   line-height: 22px;
 }
 
-/* line 839, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 840, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add {
   display: flex;
   justify-content: center;
@@ -972,7 +973,7 @@ body .wrapper .main {
   position: absolute;
 }
 
-/* line 850, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 851, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link {
   display: flex;
   align-items: center;
@@ -980,13 +981,13 @@ body .wrapper .main {
   width: 100%;
 }
 
-/* line 856, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 857, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link .zbozi__add-link-img {
   width: 36.6%;
 }
 
 @media (max-width: 767.98px) {
-  /* line 865, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 866, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi {
     margin-bottom: 54px;
     gap: 33px;
