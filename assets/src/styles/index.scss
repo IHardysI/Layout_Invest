@@ -566,7 +566,8 @@ body {
             }
 
             .triple-block__btn {
-                @include btn()
+                @include btn();
+                color: #000;
             }
 
             @media(max-width: 991.98px) {
