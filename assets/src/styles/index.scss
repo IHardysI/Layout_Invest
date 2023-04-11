@@ -865,8 +865,17 @@ body {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
-                color: #63DA46;
                 margin-bottom: 4%;
+
+                &.green {
+                    color: #63DA46;
+                }
+                &.gray {
+                    color:#979797;
+                }
+                &.red {
+                    color:#F24D4D;
+                }
 
                 @media(max-width:767.98px) {
                     &{

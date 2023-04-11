@@ -102,10 +102,21 @@ function createCards(products) {
     const cardsContainer = document.querySelector('.zbozi__cards')
     cardsContainer.innerHTML = ''
 
+    let availabilityTernary = ''
+    
 
     for(let i = 0; i < start; i++) {
         const product =products[i]
         const card = document.createElement('div')
+
+        if (product.availability === 'Skladem') {
+            availabilityTernary = `<p class="zbozi__stav green">${product.availability}</p>`
+        } else if (product.availability === 'Na objednávku') {
+            availabilityTernary = `<p class="zbozi__stav gray">${product.availability}</p>`
+        } else {
+            availabilityTernary = `<p class="zbozi__stav red">${product.availability}</p>`
+        }
+
         card.classList.add('zbozi__card')
         card.innerHTML = `
             <div class="zbozi__flags">
@@ -116,9 +127,7 @@ function createCards(products) {
             <p class="zbozi__title">
                 ${product.title}
             </p>
-            <p class="zbozi__stav">
-                ${product.availability}
-            </p>
+            ${availabilityTernary}
             <div class="zbozi__price">
                 ${`CZK ${product.price}`}
             </div>
