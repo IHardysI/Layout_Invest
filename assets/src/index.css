@@ -1038,7 +1038,14 @@ body .wrapper .main {
   transition: 0.3s;
 }
 
-/* line 904, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 991.98px) {
+  /* line 905, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card .zbozi__add {
+    opacity: 1;
+  }
+}
+
+/* line 910, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link {
   display: flex;
   align-items: center;
@@ -1046,12 +1053,12 @@ body .wrapper .main {
   width: 100%;
 }
 
-/* line 910, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 916, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link .zbozi__add-link-img {
   width: 36.6%;
 }
 
-/* line 918, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 924, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__btn {
   padding: 21px 41px;
   border: 1px solid black;
@@ -1061,16 +1068,16 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 927, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 933, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi {
     margin-bottom: 54px;
     gap: 33px;
   }
-  /* line 931, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 937, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__item:nth-child(2), .zbozi .zbozi__item:nth-child(3) {
     display: none;
   }
-  /* line 935, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 941, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__item {
     color: black;
     font-size: 26px;
