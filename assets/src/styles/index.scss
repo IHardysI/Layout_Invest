@@ -607,7 +607,7 @@ body {
 // big-sec//////////////////////////////
 
 .big-sec {
-    background: linear-gradient(180deg, rgba(19,19,19,1) 33%, rgba(255,255,255,1) 33%);
+    background: linear-gradient(180deg, #131313 58vh, white 58vh);
 
     .big-sec__container {
         display: flex;
@@ -757,9 +757,17 @@ body {
         color: #979797;
 
         .zbozi__item {
+            cursor: pointer;
+
             &.active {
                 color: black;
                 font-size: 26px;
+            }
+
+            @media(max-width:767.97px) {
+                &:nth-child(2), &:nth-child(3) {
+                    display: none;
+                }
             }
         }
     }
@@ -767,6 +775,7 @@ body {
     .zbozi__cards {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 4px;
         width: 100%;
 
@@ -778,6 +787,26 @@ body {
             transition: 0.3s;
             border: 1px solid transparent;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                .zbozi__add {
+                    opacity: 1;
+                }
+            }
+
+            @media(max-width:991.98px) {
+                & {
+                    width: 32.7%;
+                    border: 1px solid #c4c4c4;
+                }
+            }
+            @media(max-width:767.98px) {
+                & {
+                    width: 49.4%;
+                }
+            }
 
             &:hover {
                 border: 1px solid #C4C4C4;
@@ -790,6 +819,10 @@ body {
                 right: 3.8%;
                 width: 36.6%;
                 font-size: 18px;
+
+                @media(max-width:991.98px) {
+                    font-size: 12px;
+                }
 
                 .zbozi__flag1, .zbozi__flag2 {
                     width: 100%;
@@ -814,11 +847,17 @@ body {
             }
 
             .zbozi__title {
-                margin-bottom: 4%;
+                margin-bottom: auto;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 22px;
+
+                @media(max-width:767.98px) {
+                    &{
+                        font-size: 12px;
+                    }
+                }
             }
 
             .zbozi__stav {
@@ -828,6 +867,12 @@ body {
                 line-height: 17px;
                 color: #63DA46;
                 margin-bottom: 4%;
+
+                @media(max-width:767.98px) {
+                    &{
+                        font-size: 12px;
+                    }
+                }
             }
 
             .zbozi__price {
@@ -835,6 +880,12 @@ body {
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 22px;
+
+                @media(max-width:767.98px) {
+                    &{
+                        font-size: 12px;
+                    }
+                }
             }
 
             .zbozi__add {
@@ -847,6 +898,8 @@ body {
                 right: 3.8%;
                 bottom: 3.3%;
                 position: absolute;
+                opacity: 0;
+                transition: 0.3s;
 
                 .zbozi__add-link {
                     display: flex;
@@ -862,13 +915,26 @@ body {
         }
     }
 
+    .zbozi__btn {
+        padding: 21px 41px;
+        border: 1px solid black;
+        background: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
     @media(max-width: 767.98px) {
         & {
             margin-bottom: 54px;
             gap: 33px;
 
-            .zbozi__list {
-                
+            .zbozi__item:nth-child(2), .zbozi__item:nth-child(3) {
+                display: none;
+            }
+
+            .zbozi__item {
+                color: black;
+                font-size: 26px;
             }
         }
     }

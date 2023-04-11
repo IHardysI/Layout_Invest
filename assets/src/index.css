@@ -654,7 +654,7 @@ body .wrapper .main {
 
 /* line 609, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-sec {
-  background: linear-gradient(180deg, #131313 33%, white 33%);
+  background: linear-gradient(180deg, #131313 58vh, white 58vh);
 }
 
 /* line 612, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
@@ -866,21 +866,34 @@ body .wrapper .main {
   color: #979797;
 }
 
-/* line 760, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 759, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.zbozi .zbozi__list .zbozi__item {
+  cursor: pointer;
+}
+
+/* line 762, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__list .zbozi__item.active {
   color: black;
   font-size: 26px;
 }
 
-/* line 767, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 767.97px) {
+  /* line 768, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__list .zbozi__item:nth-child(2), .zbozi .zbozi__list .zbozi__item:nth-child(3) {
+    display: none;
+  }
+}
+
+/* line 775, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 4px;
   width: 100%;
 }
 
-/* line 773, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 782, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card {
   aspect-ratio: 367 / 552;
   width: 24.16%;
@@ -889,15 +902,37 @@ body .wrapper .main {
   transition: 0.3s;
   border: 1px solid transparent;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 782, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 794, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.zbozi .zbozi__cards .zbozi__card:hover .zbozi__add {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  /* line 800, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card {
+    width: 32.7%;
+    border: 1px solid #c4c4c4;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 806, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card {
+    width: 49.4%;
+  }
+}
+
+/* line 811, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card:hover {
   border: 1px solid #C4C4C4;
   box-shadow: 0.5px 0.5px 2px #c4c4c4;
 }
 
-/* line 787, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 816, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags {
   position: absolute;
   color: white;
@@ -906,7 +941,14 @@ body .wrapper .main {
   font-size: 18px;
 }
 
-/* line 794, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 991.98px) {
+  /* line 816, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card .zbozi__flags {
+    font-size: 12px;
+  }
+}
+
+/* line 827, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1, .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   width: 100%;
   height: 31px;
@@ -915,34 +957,41 @@ body .wrapper .main {
   justify-content: center;
 }
 
-/* line 801, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 834, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1 {
   margin-bottom: 9px;
   background-color: #63DA46;
 }
 
-/* line 805, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 838, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   background-color: #F24D4D;
 }
 
-/* line 810, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 843, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__img {
   width: 100%;
   aspect-ratio: 345 / 384;
   margin-bottom: 6.811%;
 }
 
-/* line 816, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 849, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__title {
-  margin-bottom: 4%;
+  margin-bottom: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
 }
 
-/* line 824, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 767.98px) {
+  /* line 857, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card .zbozi__title {
+    font-size: 12px;
+  }
+}
+
+/* line 863, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav {
   font-style: normal;
   font-weight: 500;
@@ -952,7 +1001,14 @@ body .wrapper .main {
   margin-bottom: 4%;
 }
 
-/* line 833, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 767.98px) {
+  /* line 872, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card .zbozi__stav {
+    font-size: 12px;
+  }
+}
+
+/* line 878, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__price {
   font-style: normal;
   font-weight: 500;
@@ -960,7 +1016,14 @@ body .wrapper .main {
   line-height: 22px;
 }
 
-/* line 840, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+@media (max-width: 767.98px) {
+  /* line 885, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__cards .zbozi__card .zbozi__price {
+    font-size: 12px;
+  }
+}
+
+/* line 891, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add {
   display: flex;
   justify-content: center;
@@ -971,9 +1034,11 @@ body .wrapper .main {
   right: 3.8%;
   bottom: 3.3%;
   position: absolute;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-/* line 851, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 904, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link {
   display: flex;
   align-items: center;
@@ -981,16 +1046,34 @@ body .wrapper .main {
   width: 100%;
 }
 
-/* line 857, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 910, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link .zbozi__add-link-img {
   width: 36.6%;
 }
 
+/* line 918, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.zbozi .zbozi__btn {
+  padding: 21px 41px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
 @media (max-width: 767.98px) {
-  /* line 866, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 927, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi {
     margin-bottom: 54px;
     gap: 33px;
+  }
+  /* line 931, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__item:nth-child(2), .zbozi .zbozi__item:nth-child(3) {
+    display: none;
+  }
+  /* line 935, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .zbozi .zbozi__item {
+    color: black;
+    font-size: 26px;
   }
 }
 
