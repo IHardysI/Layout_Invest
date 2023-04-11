@@ -82,7 +82,7 @@ loadMoreBtn.addEventListener('click', () => {
 
 
 function fetchProductsByCategory(category) {
-    fetch('/assets/src/products.json')
+    fetch('./assets/src/products.json')
         .then(response => response.json())
         .then(data => {
             const products = data.filter(product => product.category === category)
