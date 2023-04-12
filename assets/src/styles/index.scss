@@ -777,7 +777,7 @@ body {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 4px;
+        justify-content: space-between;
         width: 100%;
 
         .zbozi__card {
@@ -790,6 +790,7 @@ body {
             cursor: pointer;
             display: flex;
             flex-direction: column;
+            margin-bottom: 0.7%;
 
             &:hover {
                 .zbozi__add {
@@ -955,3 +956,7 @@ body {
         }
     }
 }
+
+
+// blog////////////////////////////////////////
+
