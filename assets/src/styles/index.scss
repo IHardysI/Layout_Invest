@@ -1,23 +1,25 @@
 @font-face {
     font-family: MontserratMedium;
-    src: url(../src/fonts/Montserrat-Medium.ttf) format("truetype");
+    src: url(./fonts/Montserrat-Regular.ttf) format("truetype");
     font-style: normal;
     font-weight: 500;
 }
 @font-face {
     font-family: MontserratBold;
-    src: url(../src/fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(./fonts/Montserrat-Bold.ttf) format("truetype");
     font-style: normal;
     font-weight: 700;
 }
 
 *,::before,::after{padding:0;margin:0;border:0;box-sizing:border-box}
-a{text-decoration:none;color:#000}
+a{text-decoration:none;color:#000;font-family: MontserratMedium;}
+input{font-family: MontserratMedium;}
+button{font-family: MontserratMedium;}
 ul,ol,li{list-style:none}
 input{outline: none;}
 img{vertical-align:top}
 h1,h2,h3,h4,h5,h6{font-weight:inherit;font-size:inherit}
-html,body{height:100%;line-height:1}
+html,body{height:100%;line-height:1;}
 
 // vars
 
@@ -65,19 +67,19 @@ $smallLogo: 12px 27px 10px 27px;
     cursor: pointer;
 }
 
-@mixin yellowBtn($rightPadding) {
+@mixin yellowBtn() {
     width: 16.675%;
     aspect-ratio: 243 / 118;
-    padding-left: 2.8%;
+    padding-left: 1.8%;
     background-color: #ECB235;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 9.05%;
+    gap: 8.05%;
     position: absolute;
     font-size: 14px;
-    right: 0%;
     transform: translateY(-50%);
+    button {background: transparent;}
 
     @media(max-width:991.98px) {
         & {
@@ -91,8 +93,8 @@ $smallLogo: 12px 27px 10px 27px;
     @media(max-width:767.98px) {
         & {
             font-size: 9px;
-            padding-left: 1%;
-            width: 24.675%;
+            padding-left: 4%;
+            width: 28.675%;
         }
     }
 }
@@ -190,6 +192,7 @@ body {
         .header__right {
             display: flex;
             align-items: center;
+            font-size: 14px;
 
             .header__menu {
             display: flex;
@@ -734,7 +737,8 @@ body {
     }
 
     .nabidka__btn {
-        @include yellowBtn(60px)
+        @include yellowBtn();
+        right: 0%;
     }
 }
 
@@ -960,3 +964,152 @@ body {
 
 // blog////////////////////////////////////////
 
+.blog {
+    background-color: #131313;
+    padding: 5.27% 0 8.541% 0;
+    
+    .blog__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        
+        .blog__title {
+            margin-bottom: 4.305%;
+            @include txt36px(500);
+            @media(max-width:767.98px) {
+                @include txt36pxSmall(500);
+            }
+        }
+
+        .blog__block {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+
+            .blog__item {
+                color: white;
+                width: 100%;
+                &:not(:last-child) {
+                    aspect-ratio: 480 / 336;
+                }
+                &:nth-child(5) {
+                    aspect-ratio: 960 / 336;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-left: 2.7%;
+                padding-bottom: 2.38%;
+                cursor: pointer;
+                transition: 0.7s;
+                background-size: 100%;
+                background-blend-mode: lighten;
+
+                &:nth-child(1) {
+                    background-image: url(../img/five-one.jpg);
+                }
+                &:nth-child(2) {
+                    background-image: url(../img/five-two.jpg);
+                }
+                &:nth-child(3) {
+                    background-image: url(../img/five-three.jpg);
+                }
+                &:nth-child(4) {
+                    background-image: url(../img/five-four.jpg);
+                }
+                &:nth-child(5) {
+                    background-image: url(../img/five-five.jpg);
+                }
+
+                img{
+                    margin-right: 0.713%;
+                }
+
+                .blog__h6 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    @media(max-width:767.98px) {
+                        font-size: 12px;
+                    }
+                }
+
+                .blog__h5 {
+                    display: flex;
+                    align-items: center;
+                    gap: 2.569%;
+                    @include txt36px(500);
+
+                    .blog__arrow {
+                        opacity: 0;
+                        transition: 0.7s;
+                    }
+
+                    @media(max-width: 991.98px) {
+                        font-size: 24px;
+                    }
+                }
+
+                .blog__parag {
+                    display: flex;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    @media(max-width:767.98px) {
+                        font-size: 12px;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba($color: #ECB235, $alpha: 0.7);
+                    background-size: 101%;
+
+                    .blog__arrow {
+                        opacity: 1;
+                    }
+                }
+
+                @media(min-width: 767.98px) {
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                        width: 33.33%;
+                        aspect-ratio: 480 / 336;
+                        .blog__arrow {
+                            width: 10%;
+                        }
+                    }
+                    &:nth-child(5) {
+                        width: 66.6%;
+                        .blog__arrow {
+                            width: 5%;
+                        }
+                    }
+                }
+
+                @media(max-width: 767.98px) {
+
+                    &:nth-child(3), &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .blog__btn {
+            @include yellowBtn();
+            
+            
+            transform: translateY(50%);
+            align-self: flex-end;
+
+            @media(max-width:767.98px) {
+                padding-left: 2%;
+            }
+        }
+    }
+}

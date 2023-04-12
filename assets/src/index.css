@@ -1,13 +1,13 @@
 @font-face {
   font-family: MontserratMedium;
-  src: url(../src/fonts/Montserrat-Medium.ttf) format("truetype");
+  src: url(./fonts/Montserrat-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: MontserratBold;
-  src: url(../src/fonts/Montserrat-Bold.ttf) format("truetype");
+  src: url(./fonts/Montserrat-Bold.ttf) format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -24,41 +24,52 @@
 a {
   text-decoration: none;
   color: #000;
+  font-family: MontserratMedium;
 }
 
 /* line 16, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+input {
+  font-family: MontserratMedium;
+}
+
+/* line 17, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+button {
+  font-family: MontserratMedium;
+}
+
+/* line 18, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 ul, ol, li {
   list-style: none;
 }
 
-/* line 17, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 19, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 input {
   outline: none;
 }
 
-/* line 18, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 20, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 img {
   vertical-align: top;
 }
 
-/* line 19, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 21, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
 }
 
-/* line 20, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 22, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 html, body {
   height: 100%;
   line-height: 1;
 }
 
-/* line 105, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 107, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 body {
   font-family: MontserratMedium;
 }
 
-/* line 107, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 109, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 body .wrapper {
   overflow: hidden;
   display: flex;
@@ -66,12 +77,12 @@ body .wrapper {
   min-height: 100%;
 }
 
-/* line 112, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 114, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 body .wrapper .main {
   flex: 1 1 auto;
 }
 
-/* line 118, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 120, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 [class*="__container"] {
   max-width: 1470px;
   margin: 0 auto;
@@ -80,7 +91,7 @@ body .wrapper .main {
 
 /* PC */
 @media (max-width: 1200px) {
-  /* line 126, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 128, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   [class*="__container"] {
     max-width: 970px;
   }
@@ -88,7 +99,7 @@ body .wrapper .main {
 
 /* Tablets */
 @media (max-width: 991.98px) {
-  /* line 132, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 134, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   [class*="__container"] {
     max-width: 750px;
   }
@@ -96,18 +107,18 @@ body .wrapper .main {
 
 /* Phones */
 @media (max-width: 767.98px) {
-  /* line 138, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 140, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   [class*="__container"] {
     max-width: none;
   }
 }
 
-/* line 143, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 145, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .lock {
   overflow: hidden;
 }
 
-/* line 151, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 153, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header {
   position: fixed;
   width: 100%;
@@ -115,14 +126,14 @@ body .wrapper .main {
   z-index: 100;
 }
 
-/* line 157, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 159, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container {
   display: flex;
   align-items: center;
   height: 122px;
 }
 
-/* line 163, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 165, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__logo {
   margin-right: auto;
   padding: 26px 101px 23px 79px;
@@ -133,49 +144,50 @@ body .wrapper .main {
 }
 
 @media (max-width: 1200px) {
-  /* line 174, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 176, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__logo {
     padding: 19px 58px 17px 58px;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 180, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 182, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__logo {
     padding: 12px 27px 10px 27px;
   }
-  /* line 183, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 185, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__logo.active {
     left: -100%;
     margin-right: 0;
   }
 }
 
-/* line 190, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 192, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
-/* line 194, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 197, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu {
   display: flex;
   gap: 37.5px;
 }
 
-/* line 198, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 201, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu .menu__ucet-mena {
   display: none;
 }
 
-/* line 201, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 204, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu .menu__ucet-mena .menu__mena {
   display: flex;
   align-items: center;
   gap: 11px;
 }
 
-/* line 206, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 209, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu .menu__ucet-mena .menu__mena::after {
   content: "";
   display: inline-block;
@@ -188,7 +200,7 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) {
-  /* line 219, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 222, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu .menu__ucet-mena {
     display: flex;
     align-items: center;
@@ -197,14 +209,14 @@ body .wrapper .main {
   }
 }
 
-/* line 228, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 231, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu .produkty {
   display: flex;
   align-items: center;
   gap: 11px;
 }
 
-/* line 233, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 236, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__menu .produkty::after {
   content: "";
   display: inline-block;
@@ -217,14 +229,14 @@ body .wrapper .main {
 }
 
 @media (max-width: 1200px) {
-  /* line 246, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 249, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu {
     gap: 18px;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 252, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 255, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu {
     position: fixed;
     left: -100%;
@@ -241,28 +253,28 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) and (max-width: 767.98px) {
-  /* line 266, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 269, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu {
     top: 72px;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 271, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 274, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu .menu__item {
     margin: 1rem 0;
   }
-  /* line 274, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 277, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu .menu__item .menu__link {
     color: white;
   }
-  /* line 279, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 282, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__menu.active {
     left: 0;
   }
 }
 
-/* line 285, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 288, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__form {
   display: flex;
   align-items: center;
@@ -273,61 +285,61 @@ body .wrapper .main {
   border-bottom: 1.5px solid #C9C9C9;
 }
 
-/* line 296, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 299, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__form .form__input {
   width: 274px;
   transition: 1s;
 }
 
-/* line 301, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 304, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__form button {
   background-color: transparent;
   outline: none;
 }
 
 @media (max-width: 1317px) {
-  /* line 308, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 311, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form {
     margin-left: 50px;
   }
-  /* line 312, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 315, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form .form__input {
     width: 180px;
   }
 }
 
 @media (max-width: 1200px) {
-  /* line 318, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 321, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form {
     margin-left: 22px;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 324, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 327, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form {
     border-radius: 60px;
     background-color: #E9E9E9;
     border: 0;
     margin-left: 0;
   }
-  /* line 331, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 334, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form.active {
     left: -30px;
   }
-  /* line 335, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 338, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form .form__input {
     width: 0;
     background-color: transparent;
     float: right;
   }
-  /* line 340, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 343, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__form .form__input.active {
     width: 130px;
   }
 }
 
-/* line 345, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 348, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__triple-icons {
   display: flex;
   gap: 36px;
@@ -335,23 +347,23 @@ body .wrapper .main {
   margin-left: 44px;
 }
 
-/* line 352, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 355, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__triple-icons .header__kosik {
   gap: 10px;
 }
 
-/* line 356, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 359, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__triple-icons .header__mena, .header .header__container .header__right .header__triple-icons .header__kosik, .header .header__container .header__right .header__triple-icons .header__ucet {
   display: flex;
   align-items: center;
 }
 
-/* line 361, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 364, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__triple-icons .header__mena {
   gap: 11px;
 }
 
-/* line 363, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 366, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__triple-icons .header__mena::after {
   content: "";
   display: inline-block;
@@ -364,38 +376,38 @@ body .wrapper .main {
 }
 
 @media (max-width: 1200px) {
-  /* line 377, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 380, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__triple-icons {
     gap: 10px;
     margin-left: 18px;
   }
-  /* line 383, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 386, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__triple-icons .header__kosik {
     gap: 3px;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 388, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 391, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__triple-icons .header__ucet, .header .header__container .header__right .header__triple-icons .header__mena {
     display: none;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 394, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 397, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__triple-icons {
     margin-left: 0;
   }
 }
 
-/* line 400, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 403, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__burger {
   display: none;
   cursor: pointer;
 }
 
-/* line 404, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 407, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__burger .burger__bar {
   display: block;
   width: 49px;
@@ -405,41 +417,41 @@ body .wrapper .main {
   background-color: #000;
 }
 
-/* line 414, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 417, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .header .header__container .header__right .header__burger .burger__bar:first-child {
   margin-bottom: 10px;
 }
 
 @media (max-width: 991.98px) {
-  /* line 420, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 423, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__burger {
     display: block;
   }
-  /* line 424, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 427, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__burger.active .burger__bar:nth-child(1) {
     transform: translateY(8px) rotate(45px);
   }
-  /* line 427, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 430, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right .header__burger.active .burger__bar:nth-child(2) {
     transform: translateY(-8px) rotate(-45px);
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 434, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 437, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container .header__right {
     gap: 13px;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 441, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 444, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .header .header__container {
     height: 72px;
   }
 }
 
-/* line 454, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 457, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic {
   width: 100vw;
   height: 100vh;
@@ -449,7 +461,7 @@ body .wrapper .main {
   margin-bottom: 46px;
 }
 
-/* line 462, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 465, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .big-pic__container {
   position: absolute;
   z-index: 10;
@@ -459,7 +471,7 @@ body .wrapper .main {
   align-items: center;
 }
 
-/* line 470, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 473, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .big-pic__container .big-pic__1p {
   font-style: normal;
   font-weight: 500;
@@ -471,7 +483,7 @@ body .wrapper .main {
   margin-bottom: 1rem;
 }
 
-/* line 477, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 480, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .big-pic__container .big-pic__2p {
   font-style: normal;
   font-weight: 700;
@@ -481,7 +493,7 @@ body .wrapper .main {
   margin-bottom: 4rem;
 }
 
-/* line 482, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 485, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .big-pic__container .big-pic__btn {
   width: 243px;
   height: 58px;
@@ -491,7 +503,7 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 487, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 490, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .big-pic .big-pic__container .big-pic__2p {
     font-size: 23px;
     font-style: normal;
@@ -499,7 +511,7 @@ body .wrapper .main {
     line-height: 44px;
     color: white;
   }
-  /* line 491, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 494, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .big-pic .big-pic__container .big-pic__btn {
     width: 181px;
     height: 43.2px;
@@ -509,23 +521,23 @@ body .wrapper .main {
   }
 }
 
-/* line 497, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 500, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .swiper {
   width: 100%;
   height: 100%;
 }
 
-/* line 501, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 504, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .swiper .swiper-pagination {
   bottom: 15%;
 }
 
-/* line 504, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 507, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .swiper .swiper-pagination span {
   background-color: white;
 }
 
-/* line 509, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 512, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -535,7 +547,7 @@ body .wrapper .main {
   align-items: center;
 }
 
-/* line 517, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 520, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-pic .swiper .swiper-slide img {
   display: block;
   width: 100%;
@@ -543,14 +555,14 @@ body .wrapper .main {
   object-fit: cover;
 }
 
-/* line 529, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 532, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block {
   background-color: white;
   width: 100%;
   margin-bottom: 46px;
 }
 
-/* line 534, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 537, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container {
   display: flex;
   justify-content: center;
@@ -560,7 +572,7 @@ body .wrapper .main {
   height: 40vh;
 }
 
-/* line 542, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 545, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item {
   width: 33%;
   height: 100%;
@@ -574,22 +586,22 @@ body .wrapper .main {
   background-repeat: no-repeat;
 }
 
-/* line 553, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 556, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item:nth-child(1) {
   background-image: url(../img/triple-block-1.jpg);
 }
 
-/* line 556, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 559, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item:nth-child(2) {
   background-image: url(../img/triple-block-2.jpg);
 }
 
-/* line 559, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 562, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item:nth-child(3) {
   background-image: url(../img/triple-block-3.jpg);
 }
 
-/* line 563, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 566, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item .triple-block__p {
   font-style: normal;
   font-weight: 700;
@@ -599,7 +611,7 @@ body .wrapper .main {
   text-align: center;
 }
 
-/* line 568, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 571, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .triple-block .triple-block__container .triple-block__item .triple-block__btn {
   width: 243px;
   height: 58px;
@@ -610,12 +622,12 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) {
-  /* line 574, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 577, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container .triple-block__item {
     width: 100%;
     gap: 10%;
   }
-  /* line 579, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 582, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container .triple-block__item .triple-block__p {
     font-size: 23px;
     font-style: normal;
@@ -623,7 +635,7 @@ body .wrapper .main {
     line-height: 44px;
     color: white;
   }
-  /* line 583, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 586, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container .triple-block__item .triple-block__btn {
     width: 181px;
     height: 43.2px;
@@ -634,11 +646,11 @@ body .wrapper .main {
 }
 
 @media (max-width: 1200px) {
-  /* line 589, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 592, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container .triple-block__item .triple-block__p {
     font-size: 30px;
   }
-  /* line 593, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 596, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container .triple-block__item .triple-block__btn {
     width: 196px;
     height: 48px;
@@ -646,31 +658,31 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) {
-  /* line 534, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 537, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .triple-block .triple-block__container {
     flex-direction: column;
     height: 565px;
   }
 }
 
-/* line 610, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 613, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-sec {
   background: linear-gradient(180deg, #131313 58vh, white 58vh);
 }
 
-/* line 613, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 616, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .big-sec .big-sec__container {
   display: flex;
   gap: 96px;
   flex-direction: column;
 }
 
-/* line 622, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 625, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka {
   position: relative;
 }
 
-/* line 625, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 628, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__title {
   text-align: center;
   margin: 74px 0 60px 0;
@@ -682,7 +694,7 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 631, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 634, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__title {
     font-size: 23px;
     font-style: normal;
@@ -693,14 +705,14 @@ body .wrapper .main {
   }
 }
 
-/* line 638, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 641, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 643, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 646, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item {
   width: 25%;
   aspect-ratio: 361 / 610;
@@ -716,13 +728,13 @@ body .wrapper .main {
   background-size: 100%;
 }
 
-/* line 657, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 660, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:hover {
   background-color: rgba(236, 178, 53, 0.7);
   background-size: 101%;
 }
 
-/* line 663, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 666, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item .nabidka__h5 {
   font-style: normal;
   font-weight: 500;
@@ -731,7 +743,7 @@ body .wrapper .main {
   color: #FFFFFF;
 }
 
-/* line 672, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 675, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item .nabidka__h4 {
   font-style: normal;
   font-weight: 500;
@@ -743,14 +755,14 @@ body .wrapper .main {
   gap: 3.87%;
 }
 
-/* line 678, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 681, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item .nabidka__h4 .nabidka__arrow {
   opacity: 0;
   transition: 0.7s;
 }
 
 @media (max-width: 1200px) {
-  /* line 684, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 687, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__block .nabidka__item .nabidka__h4 {
     font-size: 23px;
     font-style: normal;
@@ -760,94 +772,99 @@ body .wrapper .main {
   }
 }
 
-/* line 691, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 694, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:hover .nabidka__arrow {
   opacity: 1;
 }
 
-/* line 697, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 700, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(4) .nabidka__h4 {
   position: relative;
 }
 
-/* line 700, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 703, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(4) .nabidka__h4 .nabidka__arrow {
   position: absolute;
   bottom: -40%;
 }
 
-/* line 707, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 710, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(1) {
   background-image: url(../img/four-one.jpg);
 }
 
-/* line 710, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 713, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(2) {
   background-image: url(../img/four-two.jpg);
 }
 
-/* line 713, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 716, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(3) {
   background-image: url(../img/four-three.jpg);
 }
 
-/* line 716, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 719, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__block .nabidka__item:nth-child(4) {
   background-image: url(../img/four-four.jpg);
 }
 
 @media (max-width: 767.98px) {
-  /* line 721, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 724, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__block .nabidka__item {
     width: 50%;
   }
-  /* line 725, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 728, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__block .nabidka__item .nabidka__arrow {
     width: 12%;
   }
-  /* line 729, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 732, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__block .nabidka__item:nth-child(3), .nabidka .nabidka__block .nabidka__item:nth-child(4) {
     display: none;
   }
 }
 
-/* line 736, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 739, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .nabidka .nabidka__btn {
   width: 16.675%;
   aspect-ratio: 243 / 118;
-  padding-left: 2.8%;
+  padding-left: 1.8%;
   background-color: #ECB235;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 9.05%;
+  gap: 8.05%;
   position: absolute;
   font-size: 14px;
-  right: 0%;
   transform: translateY(-50%);
+  right: 0%;
+}
+
+/* line 82, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.nabidka .nabidka__btn button {
+  background: transparent;
 }
 
 @media (max-width: 991.98px) {
-  /* line 83, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 85, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__btn {
     font-size: 11px;
   }
-  /* line 86, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 88, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__btn img {
     width: 20%;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 92, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 94, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .nabidka .nabidka__btn {
     font-size: 9px;
-    padding-left: 1%;
-    width: 24.675%;
+    padding-left: 4%;
+    width: 28.675%;
   }
 }
 
-/* line 744, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 748, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi {
   display: flex;
   flex-direction: column;
@@ -857,7 +874,7 @@ body .wrapper .main {
   gap: 61px;
 }
 
-/* line 752, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 756, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__list {
   display: flex;
   gap: 30px;
@@ -867,25 +884,25 @@ body .wrapper .main {
   color: #979797;
 }
 
-/* line 760, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 764, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__list .zbozi__item {
   cursor: pointer;
 }
 
-/* line 763, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 767, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__list .zbozi__item.active {
   color: black;
   font-size: 26px;
 }
 
 @media (max-width: 767.97px) {
-  /* line 769, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 773, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__list .zbozi__item:nth-child(2), .zbozi .zbozi__list .zbozi__item:nth-child(3) {
     display: none;
   }
 }
 
-/* line 776, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 780, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards {
   display: flex;
   justify-content: flex-start;
@@ -894,7 +911,7 @@ body .wrapper .main {
   width: 100%;
 }
 
-/* line 783, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 787, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card {
   aspect-ratio: 367 / 552;
   width: 24.16%;
@@ -908,13 +925,13 @@ body .wrapper .main {
   margin-bottom: 0.7%;
 }
 
-/* line 796, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 800, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card:hover .zbozi__add {
   opacity: 1;
 }
 
 @media (max-width: 991.98px) {
-  /* line 802, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 806, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card {
     width: 32.7%;
     border: 1px solid #c4c4c4;
@@ -922,19 +939,19 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 808, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 812, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card {
     width: 49.4%;
   }
 }
 
-/* line 813, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 817, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card:hover {
   border: 1px solid #C4C4C4;
   box-shadow: 0.5px 0.5px 2px #c4c4c4;
 }
 
-/* line 818, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 822, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags {
   position: absolute;
   color: white;
@@ -944,13 +961,13 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) {
-  /* line 818, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 822, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card .zbozi__flags {
     font-size: 12px;
   }
 }
 
-/* line 829, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 833, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1, .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   width: 100%;
   height: 31px;
@@ -959,25 +976,25 @@ body .wrapper .main {
   justify-content: center;
 }
 
-/* line 836, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 840, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag1 {
   margin-bottom: 9px;
   background-color: #63DA46;
 }
 
-/* line 840, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 844, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__flags .zbozi__flag2 {
   background-color: #F24D4D;
 }
 
-/* line 845, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 849, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__img {
   width: 100%;
   aspect-ratio: 345 / 384;
   margin-bottom: 6.811%;
 }
 
-/* line 851, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 855, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__title {
   margin-bottom: auto;
   font-style: normal;
@@ -987,13 +1004,13 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 859, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 863, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card .zbozi__title {
     font-size: 12px;
   }
 }
 
-/* line 865, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 869, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav {
   font-style: normal;
   font-weight: 500;
@@ -1002,29 +1019,29 @@ body .wrapper .main {
   margin-bottom: 4%;
 }
 
-/* line 872, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 876, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav.green {
   color: #63DA46;
 }
 
-/* line 875, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 879, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav.gray {
   color: #979797;
 }
 
-/* line 878, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 882, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__stav.red {
   color: #F24D4D;
 }
 
 @media (max-width: 767.98px) {
-  /* line 883, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 887, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card .zbozi__stav {
     font-size: 12px;
   }
 }
 
-/* line 889, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 893, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__price {
   font-style: normal;
   font-weight: 500;
@@ -1033,13 +1050,13 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 896, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 900, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card .zbozi__price {
     font-size: 12px;
   }
 }
 
-/* line 902, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 906, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add {
   display: flex;
   justify-content: center;
@@ -1055,13 +1072,13 @@ body .wrapper .main {
 }
 
 @media (max-width: 991.98px) {
-  /* line 916, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 920, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__cards .zbozi__card .zbozi__add {
     opacity: 1;
   }
 }
 
-/* line 921, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 925, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link {
   display: flex;
   align-items: center;
@@ -1069,12 +1086,12 @@ body .wrapper .main {
   width: 100%;
 }
 
-/* line 927, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 931, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__cards .zbozi__card .zbozi__add .zbozi__add-link .zbozi__add-link-img {
   width: 36.6%;
 }
 
-/* line 935, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+/* line 939, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
 .zbozi .zbozi__btn {
   padding: 21px 41px;
   border: 1px solid black;
@@ -1084,19 +1101,261 @@ body .wrapper .main {
 }
 
 @media (max-width: 767.98px) {
-  /* line 944, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 948, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi {
     margin-bottom: 54px;
     gap: 33px;
   }
-  /* line 948, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 952, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__item:nth-child(2), .zbozi .zbozi__item:nth-child(3) {
     display: none;
   }
-  /* line 952, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  /* line 956, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
   .zbozi .zbozi__item {
     color: black;
     font-size: 26px;
+  }
+}
+
+/* line 967, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog {
+  background-color: #131313;
+  padding: 5.27% 0 8.541% 0;
+}
+
+/* line 971, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+/* line 978, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__title {
+  margin-bottom: 4.305%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  /* line 978, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__title {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    color: white;
+  }
+}
+
+/* line 986, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 992, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 2.7%;
+  padding-bottom: 2.38%;
+  cursor: pointer;
+  transition: 0.7s;
+  background-size: 100%;
+  background-blend-mode: lighten;
+}
+
+/* line 995, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:not(:last-child) {
+  aspect-ratio: 480 / 336;
+}
+
+/* line 998, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(5) {
+  aspect-ratio: 960 / 336;
+}
+
+/* line 1011, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(1) {
+  background-image: url(../img/five-one.jpg);
+}
+
+/* line 1014, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(2) {
+  background-image: url(../img/five-two.jpg);
+}
+
+/* line 1017, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(3) {
+  background-image: url(../img/five-three.jpg);
+}
+
+/* line 1020, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(4) {
+  background-image: url(../img/five-four.jpg);
+}
+
+/* line 1023, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:nth-child(5) {
+  background-image: url(../img/five-five.jpg);
+}
+
+/* line 1027, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item img {
+  margin-right: 0.713%;
+}
+
+/* line 1031, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item .blog__h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (max-width: 767.98px) {
+  /* line 1031, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item .blog__h6 {
+    font-size: 12px;
+  }
+}
+
+/* line 1041, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item .blog__h5 {
+  display: flex;
+  align-items: center;
+  gap: 2.569%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+
+/* line 1047, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item .blog__h5 .blog__arrow {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+@media (max-width: 991.98px) {
+  /* line 1041, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item .blog__h5 {
+    font-size: 24px;
+  }
+}
+
+/* line 1057, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item .blog__parag {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (max-width: 767.98px) {
+  /* line 1057, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item .blog__parag {
+    font-size: 12px;
+  }
+}
+
+/* line 1069, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:hover {
+  background-color: rgba(236, 178, 53, 0.7);
+  background-size: 101%;
+}
+
+/* line 1073, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__block .blog__item:hover .blog__arrow {
+  opacity: 1;
+}
+
+@media (min-width: 767.98px) {
+  /* line 1079, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item:nth-child(1), .blog .blog__container .blog__block .blog__item:nth-child(2), .blog .blog__container .blog__block .blog__item:nth-child(3), .blog .blog__container .blog__block .blog__item:nth-child(4) {
+    width: 33.33%;
+    aspect-ratio: 480 / 336;
+  }
+  /* line 1082, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item:nth-child(1) .blog__arrow, .blog .blog__container .blog__block .blog__item:nth-child(2) .blog__arrow, .blog .blog__container .blog__block .blog__item:nth-child(3) .blog__arrow, .blog .blog__container .blog__block .blog__item:nth-child(4) .blog__arrow {
+    width: 10%;
+  }
+  /* line 1086, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item:nth-child(5) {
+    width: 66.6%;
+  }
+  /* line 1088, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item:nth-child(5) .blog__arrow {
+    width: 5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 1096, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__block .blog__item:nth-child(3), .blog .blog__container .blog__block .blog__item:nth-child(5) {
+    display: none;
+  }
+}
+
+/* line 1103, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__btn {
+  width: 16.675%;
+  aspect-ratio: 243 / 118;
+  padding-left: 1.8%;
+  background-color: #ECB235;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8.05%;
+  position: absolute;
+  font-size: 14px;
+  transform: translateY(-50%);
+  transform: translateY(50%);
+  align-self: flex-end;
+}
+
+/* line 82, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+.blog .blog__container .blog__btn button {
+  background: transparent;
+}
+
+@media (max-width: 991.98px) {
+  /* line 85, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__btn {
+    font-size: 11px;
+  }
+  /* line 88, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__btn img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 94, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__btn {
+    font-size: 9px;
+    padding-left: 4%;
+    width: 28.675%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 1103, ../../../../../Users/uladzislau/Kod/some tests/demoday-zadani/assets/src/styles/index.scss */
+  .blog .blog__container .blog__btn {
+    padding-left: 2%;
   }
 }
 
